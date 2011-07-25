@@ -1,0 +1,502 @@
+object ImprimirDataModule: TImprimirDataModule
+  OldCreateOrder = False
+  Height = 278
+  Width = 518
+  object Query: TIBQuery
+    Database = DM.BaseDatos
+    Transaction = DM.Transaccion
+    Left = 42
+    Top = 10
+  end
+  object frxReport1: TfrxReport
+    Version = '4.10.3'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 40110.542206666700000000
+    ReportOptions.LastChange = 40521.574187638900000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 40
+    Top = 96
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 1001.575450000000000000
+        Top = 18.897650000000000000
+        Width = 718.110700000000000000
+        object Memo1: TfrxMemoView
+          Left = 18.897650000000000000
+          Top = 18.897650000000000000
+          Width = 675.315410000000000000
+          Height = 963.780150000000000000
+          ShowHint = False
+          Color = clWhite
+          HAlign = haBlock
+          Memo.UTF8W = (
+            'CONTRATO DE LEASING '
+            ''
+            
+              '              En San Rafael, Mendoza, a los [frxDBDataset1."DIA"' +
+              '] d'#237'as del mes de [frxDBDataset1."MESCRITO"] de [frxDBDataset1."' +
+              'ANO"], entre el Sr. [frxDBDataset1."DADOR"], con Documento N'#186' [f' +
+              'rxDBDataset1."DDOCUMENTO"] y domicilio en  calle [frxDBDataset1.' +
+              '"DDOMICILIO"] [frxDBDataset1."DDNUMERO"], de la ciudad de [frxDB' +
+              'Dataset1."DCIUDAD"], [frxDBDataset1."DPROVINCIA"] denominado en ' +
+              'adelante "El Dador",  y el Sr/a. [frxDBDataset1."TNOMBRE"] con D' +
+              'ocumento [frxDBDataset1."TDTIPO"] N'#186' [frxDBDataset1."TDOCUMENTO"' +
+              '] y domicilio en [frxDBDataset1."TDOMICILIO"] de la ciudad de [f' +
+              'rxDBDataset1."TCIUDAD"] provincia de [frxDBDataset1."TPROVINCIA"' +
+              '], denominado en adelante "El Tomador"; se celebra el presente C' +
+              'ontrato, el cual se regir'#225' por las siguientes cl'#225'usulas, y en ge' +
+              'neral por las normas legales vigentes : '
+            
+              'PRIMERA: OBJETO  El dador por el presente acuerda otorgar en lea' +
+              'sing al tomador, los siguientes bienes: [frxDBDataset1."BIEN"] y' +
+              ' '#233'ste los acepta de plena conformidad bajo los t'#233'rminos y condic' +
+              'iones del presente contrato.'
+            
+              'SEGUNDA: ENTREGA DE LOS BIENES. COMIENZO DEL LEASING: Ser'#225' entre' +
+              'gado el bien descripto, en adelante "El Bien",  por el Dador al ' +
+              'Tomador en calle  [frxDBDataset1."TDTRABAJO"], de la ciudad de [' +
+              'frxDBDataset1."TCIUDAD"], provincia [frxDBDataset1."TPROVINCIA"]' +
+              ', '#233'ste '#250'ltimo lo recibir'#225' de conformidad, dando de este modo com' +
+              'ienzo al leasing.'
+            
+              'TERCERA: PLAZO: Se fija en [frxDBDataset1."CANONES"]  [frxDBData' +
+              'set1."TIEMPO"]  la duraci'#243'n de  este Contrato, el cual comenzar'#225 +
+              ' a regir a partir de la firma del d'#237'a efectivo de la entrega. En' +
+              ' ning'#250'n supuesto se entender'#225' que existe t'#225'cita reconducci'#243'n. '
+            
+              'CUARTA: CANON: El tomador se obliga a abonar al dador [frxDBData' +
+              'set1."CANONES"]  c'#225'nones en [frxDBDataset1."T2"] iguales y conse' +
+              'cutivos/as . Cada canon ser'#225' equivalente a la suma de $ [frxDBDa' +
+              'taset1."CIMPORTE"] (pesos [frxDBDataset1."CIESCRITO"]). Los c'#225'no' +
+              'nes se facturaran al t'#233'rmino del contrato. El tomador no podr'#225' e' +
+              'fectuar pre cancelaciones parciales o totales de los c'#225'nones sin' +
+              ' el previo consentimiento escrito del dador. El tomador acuerda ' +
+              'pagar intereses punitorios equivalente a la Tasa Activa Efectiva' +
+              ' Anual en pesos del Banco Naci'#243'n m'#225's un 100 %, calculado desde l' +
+              'a fecha del incumplimiento hasta el efectivo pago del monto tota' +
+              'l adeudado. Todos los pagos deber'#225'n efectuarse en el domicilio d' +
+              'el dador o en cualquier otro que oportunamente se establezca.'
+            
+              'QUINTA: RIESGO DE P'#201'RDIDA: A partir de la fecha de entrega de lo' +
+              's bienes el tomador deber'#225' soportar en su totalidad el riesgo de' +
+              ' p'#233'rdida, robo, destrucci'#243'n, da'#241'o de los bienes por cualquier ca' +
+              'usa. El Tomador deber'#225' comunicar por escrito al Dador dentro de ' +
+              'los 3 d'#237'as de ocurrida cualquier p'#233'rdida. La p'#233'rdida no liberar'#225 +
+              ' al Tomador de sus obligaciones de pagar los c'#225'nones y todos los' +
+              ' dem'#225's montos adeudados en virtud del presente. En caso de produ' +
+              'cirse una p'#233'rdida, el Dador podr'#225' optar por: a) solicitar al Tom' +
+              'ador que proceda a poner dichos bienes en buen estado de conserv' +
+              'aci'#243'n y reparaci'#243'n a satisfacci'#243'n del Dador; o  b) solicitar al ' +
+              'Tomador que reemplace dichos bienes con otros del mismo modelo, ' +
+              'fabricaci'#243'n y estado, esto es para el caso que la p'#233'rdida hubier' +
+              'a disminuido el valor de los bienes en forma sustancial.'
+            
+              '              En caso que el Tomador no pudiera obtener los bien' +
+              'es de reemplazo dentro de un plazo de 30 d'#237'as de notificada la p' +
+              #233'rdida al Dador, por causas no imputables al Tomador, el Tomador' +
+              ' deber'#225' pagar al Dador, a su solicitud, un monto igual a la suma' +
+              ' que el Tomador habr'#237'a debido pagar al Dador si hubiera ejercido' +
+              ' el derecho de compra anticipada de los bienes en ese momento. U' +
+              'na vez recibida dicha suma por el Dador la operaci'#243'n de leasing ' +
+              'se dar'#225' por concluida. Asimismo, una vez reemplazados los bienes' +
+              ' por los bienes de reemplazo o en su caso transferidas al Dador ' +
+              'las sumas antes mencionadas, el Dador transferir'#225' al Tomador la ' +
+              'propiedad de los bienes "EN EL ESTADO Y LUGAR EN QUE SE ENCUENTR' +
+              'A", sin ninguna garant'#237'a del Dador ni expresa ni impl'#237'cita.'
+            
+              'SEXTA:  MANIFESTACIONES DEL TOMADOR: En atenci'#243'n a la naturaleza' +
+              ' del contrato de leasing el Tomador renuncia a todo y cualquier ' +
+              'derecho o recurso que pudieran limitar o modificar los derechos ' +
+              'del Dador o aumentar las responsabilidades y obligaciones del Da' +
+              'dor establecidas en el presente contrato.'
+            
+              'S'#201'PTIMA: RESTITUCI'#211'N DE LOS BIENES: Al vencimiento del plazo ori' +
+              'ginal del leasing, a menos que el Tomador ejerciera la opci'#243'n se' +
+              ' comprar los bienes seg'#250'n lo dispuesto en la cl'#225'usula novena del' +
+              ' presente el Tomador deber'#225' desconectar y cesar en el uso de los' +
+              ' bienes, poni'#233'ndolos a disposici'#243'n del Dador. El Tomador acuerda' +
+              ' restituir los bienes en el mismo estado en que se encontraba en' +
+              ' el momento de serle entregado. Si as'#237' no lo hiciere, el Tomador' +
+              ' se har'#225' cargo de todos los costos y gastos incurridos por el Da' +
+              'dor para poner los bienes en dicho estado.'
+            
+              'OCTAVA: CAUSALES DE INCUMPLIMIENTO: Cualquiera de los siguientes' +
+              ' supuestos constituir'#225' una causal de incumplimiento bajo el pres' +
+              'ente contrato: a) si el Tomador no cumpliera a su vencimiento co' +
+              'n cualquiera de los pagos en concepto de canon o de cualquier ot' +
+              'ro monto adeudado al Dador; o b) Si el Tomador no observara o cu' +
+              'mpliera cualquier otra disposici'#243'n, condici'#243'n o compromiso a su ' +
+              'cargo bajo el presente o bajo cualquier otro acuerdo celebrado c' +
+              'on el Dador y dicho incumplimiento no fuera subsanado por el Tom' +
+              'ador en los cinco d'#237'as posteriores a la notificaci'#243'n de dicho in' +
+              'cumplimiento.'
+            
+              '              Ante la mora del Tomador en el pago del canon el D' +
+              'ador puede: a) Obtener el inmediato secuestro del bien, con la s' +
+              'ola presentaci'#243'n del contrato inscripto, mediante acta notarial ' +
+              'en la cual se requerir'#225' al tomador el '#250'ltimo recibo de pago y co' +
+              'nstat'#225'ndose el incumplimiento por parte del escribano intervinie' +
+              'nte,  ya sea por negativa a presentar los recibos  o por no pres' +
+              'entar los recibos correspondientes a las cuotas reclamadas. Prod' +
+              'ucido el secuestro, queda resuelto el contrato.')
+        end
+      end
+      object PageFooter1: TfrxPageFooter
+        Top = 1080.945580000000000000
+        Width = 718.110700000000000000
+      end
+    end
+    object Page2: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle2: TfrxReportTitle
+        Height = 963.780150000000000000
+        Top = 18.897650000000000000
+        Width = 718.110700000000000000
+        object Memo2: TfrxMemoView
+          Left = 18.897650000000000000
+          Top = 18.897650000000000000
+          Width = 675.315410000000000000
+          Height = 566.929500000000000000
+          ShowHint = False
+          Color = clWhite
+          HAlign = haBlock
+          Memo.UTF8W = (
+            
+              '              En este caso el Tomador no se podr'#225' negar por ning' +
+              #250'n motivo a la entrega o devoluci'#243'n del bien bajo pena de entend' +
+              'erse su negativa como retenci'#243'n indebida, delito tipificado expr' +
+              'esamente en el art. 173 inc.  2'#186'  del C'#243'digo Penal Argentino.- E' +
+              'l Dador puede promover ejecuci'#243'n por el cobro del canon que se h' +
+              'ubiera devengado ordinariamente hasta el per'#237'odo '#237'ntegro en que ' +
+              'se produjo el secuestro y sus intereses, todo ello sin perjuicio' +
+              ' de la acci'#243'n del Dador por los da'#241'os y perjuicios, y la acci'#243'n ' +
+              'del Tomador si correspondiere, o b) Accionar por v'#237'a ejecutiva p' +
+              'or el cobro del canon no pagado, incluyendo la totalidad del can' +
+              'on pendiente, si as'#237' se hubiere convenido, con la sola presentac' +
+              'i'#243'n del contrato inscripto y sus accesorios. En este caso s'#243'lo p' +
+              'rocede el secuestro cuando ha vencido el plazo ordinario del lea' +
+              'sing sin haberse pagado el canon '#237'ntegro y el precio de la opci'#243 +
+              'n de compra, o cuando se demuestre sumariamente el peligro en la' +
+              ' conservaci'#243'n del bien, debiendo el Dador otorgar cauci'#243'n sufici' +
+              'ente. '
+            
+              'NOVENA: OPCI'#211'N DE COMPRA: De no incurrir ninguna causal de incum' +
+              'plimiento el Tomador podr'#225' optar mediante notificaci'#243'n escrita, ' +
+              'con un m'#237'nimo de 30 d'#237'as de anticipaci'#243'n a la fecha de vencimien' +
+              'to del plazo original del leasing, por comprar los bienes, en la' +
+              ' fecha de vencimiento del plazo original del leasing.  En caso q' +
+              'ue el Tomador hubiera optado por la compra de los bienes, deber'#225 +
+              ' pagar al Dador el precio correspondiente por lo menos cinco d'#237'a' +
+              's antes de la fecha de vencimiento del  plazo original de la ope' +
+              'raci'#243'n de leasing. El precio de compra ser'#225' igual a la suma de $' +
+              '  [frxDBDataset1."IMPORTETOTAL"] (pesos [frxDBDataset1."ITESCRIT' +
+              'O"]). Sin perjuicio de lo dicho anteriormente, las partes podr'#225'n' +
+              ' optar por comprar los bienes en cualquier momento antes de la f' +
+              'echa de vencimiento del plazo original. En ese caso el precio de' +
+              ' compra a ser pagado por el Tomador ser'#225' igual a la suma de (pes' +
+              'os).'
+            
+              'D'#201'CIMA: TRANSFERENCIA DE LA PROPIEDAD DE LOS BIENES: En el caso ' +
+              'de ejercicio de cualquiera de las dos opciones de compra mencion' +
+              'ada en la cl'#225'usula anterior y sujeto a que el Dador hubiera reci' +
+              'bido todos los importes mencionados tambi'#233'n en dicha cl'#225'usula, e' +
+              'l Dador deber'#225' transferir la propiedad de los bienes al Tomador ' +
+              '"EN EL ESTADO Y LUGAR EN QUE SE ENCUENTRA" sin ninguna garant'#237'a,' +
+              ' expresa ni impl'#237'cita. por parte del Dador.'
+            
+              'D'#201'CIMA PRIMERA: CESIONES: El Dador tendr'#225' el derecho incondicion' +
+              'al de ceder o de otro modo disponer de, en forma total o parcial' +
+              ', cualquiera de sus derechos conforme al presente o a cualquiera' +
+              ' de los bienes, sin necesidad del previo consentimiento del Toma' +
+              'dor y en los casos previstos en el Art. 70 de la Ley 24.441, sin' +
+              ' notificaci'#243'n previa al Tomador.'
+            
+              'D'#201'CIMA SEGUNDA: LEY APLICABLE. JURISDICCI'#211'N: El presente contrat' +
+              'o se interpretar'#225' y regir'#225' de acuerdo con las leyes 25248 y 24.4' +
+              '41 en la parte pertinente. El Dador y Tomador irrevocablemente s' +
+              'e someten a la competencia de los tribunales ordinarios de la ci' +
+              'udad de [frxDBDataset1."DCIUDAD"], [frxDBDataset1."DPROVINCIA"].'
+            
+              '              En prueba de conformidad se firman tres ejemplares' +
+              ' se un mismo tenor y a un solo efecto en el lugar y fecha consig' +
+              'nados en el presente.')
+        end
+        object Memo3: TfrxMemoView
+          Left = 34.015770000000000000
+          Top = 774.803650000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Sr. [frxDBDataset1."DAPELLIDO"] [frxDBDataset1."DNOMBRE"]')
+        end
+        object Memo4: TfrxMemoView
+          Left = 34.015770000000000000
+          Top = 831.496600000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Firma: ....................................................')
+        end
+        object Memo5: TfrxMemoView
+          Left = 34.015770000000000000
+          Top = 869.291900000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Aclaraci'#243'n: ............................................')
+        end
+        object Memo6: TfrxMemoView
+          Left = 34.015770000000000000
+          Top = 907.087200000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Documento: ..........................................')
+        end
+        object Memo7: TfrxMemoView
+          Left = 411.968770000000000000
+          Top = 774.803650000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Sr/a. [frxDBDataset1."TAPELLIDO"] [frxDBDataset1."TNOMBRE"]')
+        end
+        object Memo8: TfrxMemoView
+          Left = 411.968770000000000000
+          Top = 831.496600000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Firma: ....................................................')
+        end
+        object Memo9: TfrxMemoView
+          Left = 411.968770000000000000
+          Top = 869.291900000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Aclaraci'#243'n: ............................................')
+        end
+        object Memo10: TfrxMemoView
+          Left = 411.968770000000000000
+          Top = 907.087200000000000000
+          Width = 268.346630000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Color = clWhite
+          Memo.UTF8W = (
+            'Documento: ..........................................')
+        end
+      end
+      object PageFooter2: TfrxPageFooter
+        Top = 1043.150280000000000000
+        Width = 718.110700000000000000
+      end
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = Query
+    BCDToCurrency = False
+    Left = 72
+    Top = 96
+  end
+  object frxXLSExport1: TfrxXLSExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    ExportEMF = True
+    AsText = False
+    Background = True
+    FastExport = True
+    PageBreaks = True
+    EmptyLines = True
+    SuppressPageHeadersFooters = False
+    Left = 40
+    Top = 144
+  end
+  object frxPDFExport1: TfrxPDFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    PrintOptimized = False
+    Outline = False
+    Background = False
+    HTMLTags = True
+    Author = 'DeGsoft'
+    Subject = 'FastReport PDF export'
+    ProtectionFlags = [ePrint, eModify, eCopy, eAnnot]
+    HideToolbar = False
+    HideMenubar = False
+    HideWindowUI = False
+    FitWindow = False
+    CenterWindow = False
+    PrintScaling = False
+    Left = 72
+    Top = 144
+  end
+  object frxCheckBoxObject1: TfrxCheckBoxObject
+    Left = 72
+    Top = 192
+  end
+  object frxDesigner1: TfrxDesigner
+    DefaultScriptLanguage = 'PascalScript'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = -13
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = []
+    DefaultLeftMargin = 10.000000000000000000
+    DefaultRightMargin = 10.000000000000000000
+    DefaultTopMargin = 10.000000000000000000
+    DefaultBottomMargin = 10.000000000000000000
+    DefaultPaperSize = 9
+    DefaultOrientation = poPortrait
+    GradientEnd = 11982554
+    GradientStart = clWindow
+    TemplatesExt = 'fr3'
+    Restrictions = []
+    RTLLanguage = False
+    MemoParentFont = False
+    Left = 104
+    Top = 96
+  end
+  object frxBarCodeObject1: TfrxBarCodeObject
+    Left = 40
+    Top = 192
+  end
+  object frxHTMLExport1: TfrxHTMLExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    FixedWidth = True
+    Background = False
+    Centered = False
+    EmptyLines = True
+    Print = False
+    Left = 104
+    Top = 144
+  end
+  object frxXMLExport1: TfrxXMLExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Background = True
+    Creator = 'FastReport'
+    EmptyLines = True
+    SuppressPageHeadersFooters = False
+    RowsCount = 0
+    Split = ssNotSplit
+    Left = 136
+    Top = 144
+  end
+  object frxRTFExport1: TfrxRTFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    ExportEMF = True
+    Wysiwyg = True
+    Creator = 'FastReport'
+    SuppressPageHeadersFooters = False
+    HeaderFooterMode = hfText
+    AutoSize = False
+    Left = 168
+    Top = 144
+  end
+  object frxJPEGExport1: TfrxJPEGExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Left = 200
+    Top = 144
+  end
+  object frxMailExport1: TfrxMailExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    ShowExportDialog = True
+    SmtpPort = 25
+    UseIniFile = True
+    TimeOut = 60
+    ConfurmReading = False
+    Left = 232
+    Top = 144
+  end
+  object frxCSVExport1: TfrxCSVExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Separator = ';'
+    OEMCodepage = False
+    NoSysSymbols = True
+    ForcedQuotes = False
+    Left = 264
+    Top = 144
+  end
+  object frxDBFExport1: TfrxDBFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    OEMCodepage = False
+    Left = 296
+    Top = 144
+  end
+  object frxSimpleTextExport1: TfrxSimpleTextExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Frames = False
+    EmptyLines = False
+    OEMCodepage = False
+    Left = 328
+    Top = 144
+  end
+end
